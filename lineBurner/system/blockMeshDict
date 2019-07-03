@@ -133,6 +133,13 @@ vertices
 
 (0.525 2 0)//55
 
+(0.525 0.65 2) //56
+
+(1.475 0.65 2) //57
+
+(1.475 1.35 2) //58
+
+(0.525 1.35 2) //59
 
 );
 
@@ -148,95 +155,34 @@ hex (24 25 26 27 36 37 38 39) (144 96 144) simpleGrading (1 1 1)
 
 //level2-8.333mm mesh:
 
-hex (4 48 51 7) (21 84 96) simpleGrading (1 1 1)
+hex (4 48 51 7 28 32 35 31) (21 84 96) simpleGrading (1 1 1)
 
 hex (49 5 6 50 33 29 30 34) (21 84 96) simpleGrading (1 1 1)
 
-hex (48 49 13 12 32 33 37 36) (72 18 96) simpleGrading(1 1 1)
+hex (48 49 13 12 32 33 37 36) (72 18 96) simpleGrading (1 1 1)
 
-hex (15 14 50 51 39 38 34 35) ( 72 18 96) simpleGrading(1 1 1)
+hex (15 14 50 51 39 38 34 35) ( 72 18 96) simpleGrading (1 1 1)
 
-hex (24 25 26 27 36 37 38 39) (72 48 24) simpleGrading(1 1 1)
-// block0 - positive x O-grid block
+hex (24 25 26 27 36 37 38 39) (72 48 24) simpleGrading (1 1 1)
 
-hex (5 1 0 4 13 9 8 12 ) AB
+//legel 3- 16.667mm mesh
 
-(6 10 40)
+hex (0 52 55 3 40 44 47 43) (32 120 120) simpleGrading (1 1 1)
 
-simpleGrading (5 1 1)
+hex (53 1 2 54 45 41 42 46) (32 120 120) simpleGrading (1 1 1)
 
-// block1 - positive y O-grid block
+hex (52 53 5 4 44 45 57 56) (57 39 120) simpleGrading (1 1 1)
 
-hex (6 2 1 5 14 10 9 13 ) AB
-(6 10 40)
+hex (7 6 54 55 59 58 46 47) (57 39 120) simpleGrading (1 1 1)
 
-simpleGrading (5 1 1)
+hex (28 29 30 31 56 57 58 59) (57 42 72) simpleGrading (1 1 1)
 
-// block2 - negative x O-grid block
-
-hex (7 3 2 6 15 11 10 14 ) AB
-
-(6 10 40)
-
-simpleGrading (5 1 1)
-
-// block3 - negative y O-grid block
-
-hex (4 0 3 7 12 8 11 15 ) AB
-
-(6 10 40)
-
-simpleGrading (5 1 1)
-
-// block4 - central O-grid block
-
-hex (0 1 2 3 8 9 10 11 ) AB
-
-(10 10 40)
-
-simpleGrading (1 1 1)
 
 );
 
 edges
 
 (
-
-//Plane A:
-
-arc 0 1 (0.0728 0 -2)
-
-arc 1 2 (0 0.0728 -2)
-
-arc 2 3 (-0.0728 0 -2)
-
-arc 3 0 (0 -0.0728 -2)
-
-arc 4 5 (0.13 0 -2)
-
-arc 5 6 (0 0.13 -2)
-
-arc 6 7 (-0.13 0 -2)
-
-arc 7 4 (0 -0.13 -2)
-
-//Plane B:
-
-arc 8 9 (0.0728 0 0)
-
-arc 9 10 (0 0.0728 0)
-
-arc 10 11 (-0.0728 0 0)
-
-arc 11 8 (0 -0.0728 0)
-
-arc 12 13 (0.13 0 0)
-
-arc 13 14 (0 0.13 0)
-
-arc 14 15 (-0.13 0 0)
-
-arc 15 12 (0 -0.13 0)
 
 );
 
@@ -250,15 +196,7 @@ patch inlet
 
 (
 
-(1 5 4 0)
-
-(2 6 5 1)
-
-(3 7 6 2)
-
-(0 4 7 3)
-
-(3 2 1 0)
+(0 1 2 3)
 
 )
 
@@ -266,30 +204,10 @@ patch outlet
 
 (
 
-(13 9 8 12)
-
-(14 10 9 13)
-
-(15 11 10 14)
-
-(12 8 11 15)
-
-(8 9 10 11)
-)
-
-wall wallDiffuser
-
-(
-
-(4 5 13 12)
-
-(5 6 14 13)
-
-(6 7 15 14)
-
-(7 4 12 15)
+(40 41 42 43)
 
 )
+
 
 );
 // ************************************************************************* //
