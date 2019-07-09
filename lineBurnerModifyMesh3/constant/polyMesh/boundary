@@ -15,14 +15,20 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-1
+2
 (
+    outlet
+    {
+        type            patch;
+        nFaces          400;
+        startFace       51952;
+    }
     defaultFaces
     {
         type            empty;
         inGroups        1(empty);
-        nFaces          8608;
-        startFace       51952;
+        nFaces          8208;
+        startFace       52352;
     }
 )
 
